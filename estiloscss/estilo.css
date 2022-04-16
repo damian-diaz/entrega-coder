@@ -97,7 +97,7 @@ header{
     height: 100px;
     width: 150px;
     margin: 0px 0;
-    transition: all 1s ease;
+    transition: all 2s ease;
 }
 .zoom img:hover{
     height: 200px;
@@ -151,6 +151,21 @@ footer{
     bottom: 0;
     margin-top: auto;
    
+}
+@keyframes example{
+    0% {left: 0px;top:0px,}
+    25% {left: 600px; top: 0px;}
+    50% { left: 600px; top: 200px;}
+    75% { left: 0px; top: 200px;}
+    100% {left: 0px;top: 0px;}
+}
+.dibu{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 
 .fin{
